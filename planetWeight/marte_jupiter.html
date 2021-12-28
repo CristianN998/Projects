@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your weight on diff planets</title>
+    </head>
+    <body>
+        <h1>Your weight in other planets</h1>
+        <p>On earth you weight different than in Mars or Jupiter</p>
+        <script>
+        
+            var weight = prompt("What is your weight?");
+            var planet = parseInt(prompt("Choose your planet: \n1 is mars, 2 is jupiter and 3 is Saturn"));
+
+            var g_earth = 9.8;
+            var g_mars = 3.7;
+            var g_jupiter = 24.8;
+            var g_saturn = 10.44;
+            var final_weight;
+
+            if(planet == 1)
+            {
+                planet = "Mars"
+                final_weight = weight * g_mars / g_earth;
+            }
+            else if(planet ==2)
+            {
+                planet = "Jupiter"
+                final_weight = weight * g_jupiter / g_earth;
+            }
+            else if(planet ==3){
+                planet = "Saturn"
+                final_weight = weight * g_saturn / g_earth;
+            }
+            else{
+                final_weight = 10000000;
+            }
+
+            final_weight = parseInt(final_weight);
+            document.write("Your weight on " +planet+ " is <strong>" + final_weight 
+            + "kg</strong>");
+            
+
+
+        </script>
+    </body>
+</html>

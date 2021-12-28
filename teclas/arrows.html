@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing with arrows</title>
+</head>
+<style>
+    h1 {
+        margin-left: 18vw;
+    }
+    
+    div {
+        display: inline;
+    }
+    
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 24px;
+        color: black;
+        background-image: linear-gradient(to right, red, yellow);
+    }
+    
+    p {
+        margin-left: 15vw;
+    }
+    
+    #button_eraser_all {
+        margin-left: 20vw;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .buttonCustom {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .buttonCustom:hover {
+        color: red;
+        background-color: gray;
+    }
+</style>
+
+<body>
+
+    <div>
+        <canvas width="1000" height="500" id="drawing_area"></canvas>
+        <h1>Canvas Painter</h1>
+    </div>
+
+    <p> <br>Select canvas color
+        <input type="color" id="canvas_color">
+        <input type="button" id="canvas_color_button" value="Change" class="buttonCustom">
+
+        <br> Select your stroke color
+        <input type="color" id="stroke_color">
+        <br>Select your stroke size
+        <input type="range" min="0" max="100" id="stroke_size">
+        <br>Select eraser
+        <input type="button" id="button_eraser" value="Eraser" class="buttonCustom">
+        <br>
+        <input type="button" id="button_eraser_all" value="START" class="buttonCustom">
+
+
+    </p>
+    <script src="events.js"></script>
+    <footer class="footer">
+        <h3>Elaborado por Cristian Casallas, 2021</h3>
+    </footer>
+</body>
+
+</html>

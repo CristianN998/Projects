@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <audio src="tecla.mp3" id="tecla_id"></audio>
+    <audio src="alerta.mp3" id="alerta_id"></audio>
+    <audio src="entrega.mp3" id="entrega_id"></audio>
+    <h1>ATM PROJECT</h1>
+    <img src="atm.jpg">
+    <hr>
+    <p>Available:
+        <input type="text" size="30" id="available_text" readonly/>
+        <input type="number" id="money_text" class="editme">
+        <input type="button" id="go_button" class="editme" value="GO!">
+        <p id="result"></p>
+
+    </p>
+
+    <br>
+    <div id="carga_id"></div>
+    <hr>
+    <footer>Made by Cristian Casallas Developer</footer>
+    <script src="logic.js"></script>
+
+</body>
+
+
+</html>

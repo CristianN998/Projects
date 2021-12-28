@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your weight on diff planets</title>
+    </head>
+    <body>
+        <h1>Your weight in other planets</h1>
+        <p>On earth you weight different than in Mars or Jupiter</p>
+        <script>
+            var user = prompt("What is your weight?");
+            var weight = parseFloat(user);
+
+            var g_earth = 9.8;
+            var g_mars = 3.7;
+            var g_jupiter = 24.8;
+            var final_weight;
+            final_weight = weight * g_mars / g_earth;
+            final_weight = parseFloat(final_weight)
+            document.write("Your weight on mars is <strong>" + final_weight 
+            + "kg</strong>")
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Drawing on Canvas</title>
+</head>
+<style>
+    #button:hover {
+        color: rgb(255, 0, 0);
+    }
+    
+    #button {
+        font-size: 2em;
+        margin-top: 50px;
+        margin-left: 5vw;
+        padding-left: 0;
+        padding-right: 0;
+        display: inline-block;
+    }
+    
+    #button_clear:hover {
+        color: red;
+    }
+    
+    #button_clear {
+        font-size: 2em;
+        padding-left: 0;
+        padding-right: 0;
+        display: inline-block;
+    }
+    
+    h1 {
+        color: rgb(13, 226, 102);
+    }
+    
+    p {
+        color: rgb(188, 228, 10);
+    }
+    
+    body {
+        margin-left: 40vw;
+        background: linear-gradient(60deg, rgb(62, 22, 88), rgb(51, 51, 51), rgb(45, 202, 202));
+        font-size: 24px;
+        background-color: black;
+        color: white;
+    }
+    
+    input {
+        border: 20px rgb(65, 65, 170);
+    }
+</style>
+
+<body>
+    <h1>Draw on Canvas by CristianDeveloper</h1>
+    <p>
+        How big do you want your canvas?
+        <input type="text" id="text_canvas" />
+        <br> How many lines do you want me to draw?
+        <input type="text" id="text_lines" />
+        <br>Which colors do you want for your lines?
+        <input type="color" id="text_color00" />
+        <input type="color" id="text_color01" />
+        <input type="color" id="text_color02" />
+        <input type="color" id="text_color03" />
+
+        <br> Do you want a border?
+        <select name="border" id="border_bool" onChange="update()">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>Which color do you want the border?
+        <input type="color" id="border_color" />
+        <br>Which figure do you want?
+        <select name="figures" id="figure_user">
+          <option value="Star">Star</option>
+          <option value="Eye">Eye</option>
+          <option value="Square">Square</option>
+        </select>
+        <br>
+        <input type="button" value="GO!" id="button" />
+        <input type="button" value="CLEAR" id="button_clear" />
+
+    </p>
+
+    <canvas width="500px" height="500px" id="draw"></canvas>
+
+    <p>That's how your draw looks</p>
+    <script src="draw.js">
+        update();
+    </script>
+</body>
+
+</html>

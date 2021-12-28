@@ -1,0 +1,62 @@
+* {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#money_text {
+    position: absolute;
+    right: -70px;
+    bottom: -45px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#go_button {
+    position: absolute;
+    right: -70px;
+    bottom: -45px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#available_text {
+    position: absolute;
+    right: -70px;
+    bottom: -0px;
+    width: 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50vw;
+}
+
+p {
+    position: absolute;
+    right: 510px;
+    bottom: 650px;
+}
+
+textarea {
+    resize: none;
+    width: 50x;
+    height: 20px;
+}

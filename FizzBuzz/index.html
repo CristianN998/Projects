@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        
+        h1 {
+            color: red;
+        }
+        
+        p {
+            color: red;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        input {
+            border-radius: 20px;
+            border-color: blue;
+            background-color: black;
+            color: white;
+        }
+        
+        input:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FizzBuzz Proyecto</h1>
+    <h2>Explanation:</h2>
+    <h3>This project consist in, you select your index which is for the cycle<strong> "FOR"</strong> then, you select your maximun which is the times the cycle<strong> "FOR" will be executed, then, you select the number to divide which have to be the same as the index because you're
+        doing a cycle <strong>"FOR"</strong>, then, you select the<strong> "Fizz"</strong> and <strong>"Buzz".</strong>
+        <br> <strong>Fizz:</strong> will appear when the residual of the<strong> Fizz</strong> number is different to zero
+        <br> <strong>Buzz:</strong> will appear when the residual of the <strong>Buzz</strong> number is different to zero
+    </h3>
+    <p>
+        <br> Select your index
+        <input type="text" id="index">
+        <br>
+        <br> Select your maximum
+        <input type="text" id="numbers">
+
+        <br>
+        <br> Select number to Fizz
+        <input type="text" id="divisor">
+        <br>
+        <br> Select number to Buzz
+        <input type="text" id="divisor2">
+        <br>
+        <br>
+        <input type="button" id="button" value="GO!">
+
+    </p>
+    <p id="result"></p>
+    <br>
+
+
+    <script src="logic.js"></script>
+</body>
+
+
+</html>
